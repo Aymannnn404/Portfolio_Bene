@@ -1,13 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mon Portfolio - BTS SIO SLAM</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    ayman qahba
-    rayan qahba
-    
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#veille">Veille</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <h2>Bienvenue</h2>
+        <p>Étudiant en BTS SIO option SLAM, passionné par le développement web et logiciel.</p>
+    </section>
+
+    <section id="apropos">
+        <h2>À propos de moi</h2>
+        <p>Je m'appelle Ayman, actuellement en BTS SIO SLAM à l'institut F2I . J'aime coder, résoudre des problèmes et apprendre de nouvelles technologies.</p>
+        <a href="CV.pdf" target="_blank">📄 Télécharger mon CV</a>
+    </section>
+
+    <section id="competences">
+        <h2>Compétences</h2>
+        <ul>
+            <li>💻 HTML / CSS / JavaScript</li>
+            <li>🛠️ PHP / SQL / MySQL</li>
+            <li>🧠 Travail en équipe / Git / GitHub</li>
+        </ul>
+    </section>
+
+    <section id="projets">
+        <h2>Projets réalisés</h2>
+        <div class="projet">
+            <h3>Projet de gestion d'étudiants</h3>
+            <p>Application CRUD en PHP/MySQL avec authentification.</p>
+            <a href="https://github.com/ton-projet" target="_blank">Voir sur GitHub</a>
+        </div>
+        <div class="projet">
+            <h3>Site vitrine responsive</h3>
+            <p>Site web statique réalisé en HTML/CSS pour une entreprise fictive.</p>
+        </div>
+    </section>
+
+    <section id="veille">
+        <h2>Veille technologique</h2>
+        <p>Je suis les actualités tech via des flux RSS, newsletters (Zataz, Developpez.com), et des podcasts. Thème suivi : la cybersécurité et les frameworks modernes.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message..." required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <p>📧 Email : <a href="mailto:tonemail@example.com">tonemail@example.com</a></p>
+        <p>🔗 <a href="https://github.com/ton-github" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/tonprofil" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - BENNAI Ayman - BTS SIO SLAM</p>
+    </footer>
 </body>
 </html>
