@@ -10,29 +10,102 @@ import { Download } from "lucide-react"
 export function SynthesisSection() {
   const synthesisData = [
     {
-      "project": "Application de Rendez-vous",
-      "competences": [
-        { "id": "C1.1", "name": "Analyse des besoins fonctionnels", "status": "Acquis" },
-        { "id": "C4.1", "name": "Conception et modélisation de la base de données", "status": "Acquis" },
-        { "id": "C5.2", "name": "Développement des composants d'accès à la base de données", "status": "Acquis" }
-      ]
+      project: "Développement d'un QCM en utilisant PHP / MySQL",
+      period: "01/24-04/24",
+      competences: [
+        {
+          id: "Gérer le patrimoine informatique",
+          name: "Recenser et identifier les ressources numériques",
+          status: "Acquis",
+        },
+        { id: "Répondre aux incidents", name: "Traiter des demandes concernant les applications", status: "Acquis" },
+        {
+          id: "Développer la présence en ligne",
+          name: "Participer à l'évolution d'un site Web exploitant les données de l'organisation",
+          status: "Acquis",
+        },
+        { id: "Travailler en mode projet", name: "Planifier les activités", status: "Acquis" },
+      ],
     },
     {
-      "project": "Site E-commerce de Montres",
-      "competences": [
-        { "id": "C2.3", "name": "Développement de l'interface utilisateur responsive", "status": "Acquis" },
-        { "id": "C3.2", "name": "Sécurisation des transactions et données utilisateur", "status": "Acquis" },
-        { "id": "C6.1", "name": "Tests, validation et déploiement de l'application", "status": "Acquis" }
-      ]
+      project: "Développement d'une application de réservation de terrain de foot fivearena = Html css et php mysql",
+      period: "10/24-03/25",
+      competences: [
+        {
+          id: "Gérer le patrimoine informatique",
+          name: "Exploiter des référentiels, normes et standards",
+          status: "Acquis",
+        },
+        {
+          id: "Répondre aux incidents",
+          name: "Traiter des demandes concernant les services réseau et système",
+          status: "Acquis",
+        },
+        {
+          id: "Développer la présence en ligne",
+          name: "Référencer les services en ligne de l'organisation",
+          status: "Acquis",
+        },
+        {
+          id: "Travailler en mode projet",
+          name: "Analyser les objectifs et les modalités d'organisation d'un projet",
+          status: "Acquis",
+        },
+      ],
     },
     {
-      "project": "Application de Réservation de Terrains",
-      "competences": [
-        { "id": "C2.1", "name": "Conception d'une solution applicative adaptée", "status": "Acquis" },
-        { "id": "C5.1", "name": "Programmation mobile multiplateforme", "status": "Acquis" },
-        { "id": "C7.3", "name": "Gestion des données en temps réel", "status": "En cours" }
-      ]
-    }
+      project: "Réalisation du portfolio Documentation de mon code",
+      period: "01/25-03/25",
+      competences: [
+        {
+          id: "Organiser son développement professionnel",
+          name: "Gérer son identité professionnelle",
+          status: "Acquis",
+        },
+      ],
+    },
+    {
+      project: "Réalisation d'une site web de vente de montres en utilisant laravel html Css et JS",
+      period: "06/24",
+      competences: [
+        {
+          id: "Gérer le patrimoine informatique",
+          name: "Mettre en place et vérifier les niveaux d'habilitation",
+          status: "Acquis",
+        },
+        { id: "Répondre aux incidents", name: "Collecter, suivre et orienter des demandes", status: "Acquis" },
+        {
+          id: "Développer la présence en ligne",
+          name: "Participer à la valorisation de l'image de l'organisation",
+          status: "Acquis",
+        },
+        { id: "Travailler en mode projet", name: "Évaluer les indicateurs de suivi d'un projet", status: "Acquis" },
+        { id: "Mettre à disposition des utilisateurs", name: "Déployer un service", status: "Acquis" },
+        {
+          id: "Organiser son développement professionnel",
+          name: "Développer son projet professionnel",
+          status: "Acquis",
+        },
+      ],
+    },
+    {
+      project: "Réalisation d'une application locale de site de prises de rendez vous réalisée en Python",
+      period: "01/25",
+      competences: [
+        { id: "Gérer le patrimoine informatique", name: "Gérer des sauvegardes", status: "Acquis" },
+        { id: "Répondre aux incidents", name: "Collecter, suivre et orienter des demandes", status: "Acquis" },
+        {
+          id: "Travailler en mode projet",
+          name: "Réaliser les tests d'intégration et d'acceptation",
+          status: "Acquis",
+        },
+        {
+          id: "Mettre à disposition des utilisateurs",
+          name: "Accompagner les utilisateurs dans la mise en place d'un service",
+          status: "Acquis",
+        },
+      ],
+    },
   ]
 
   return (
@@ -62,18 +135,47 @@ export function SynthesisSection() {
             Ce tableau de synthèse présente les compétences du référentiel BTS SIO que j'ai pu mettre en œuvre à travers
             mes différents projets.
           </p>
-          <Button className="bg-blue-600 hover:bg-blue-700 shadow-md text-white">
-            <Download className="mr-2 h-4 w-4" /> Télécharger le tableau complet
-          </Button>
+          <a href="/Tableau de synthese.xlsx" download>
+            <Button className="bg-blue-600 hover:bg-blue-700 shadow-md text-white">
+              <Download className="mr-2 h-4 w-4" /> Télécharger le tableau complet
+            </Button>
+          </a>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="mb-6 p-4 bg-slate-800 border border-slate-700 rounded-lg"
+        >
+          <h3 className="text-xl font-bold mb-2 text-white">Informations personnelles</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-300">
+            <div>
+              <span className="font-medium">Nom et prénom:</span> BENNAI Ayman
+            </div>
+            <div>
+              <span className="font-medium">N° candidat:</span> 02444895431
+            </div>
+            <div>
+              <span className="font-medium">Centre de formation:</span> BTS SIO OPTION SLAM
+            </div>
+            <div>
+              <span className="font-medium">Portfolio:</span>{" "}
+              <a href="https://portfolio-bene.vercel.app" className="text-blue-400 hover:underline">
+                portfolio-bene.vercel.app
+              </a>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}>
           <Card className="bg-clean-card border-slate-700">
             <CardContent className="pt-6 overflow-x-auto">
               <Table>
                 <TableHeader>
                   <TableRow className="border-slate-700">
-                    <TableHead className="w-[200px] text-slate-200">Projet</TableHead>
+                    <TableHead className="w-[250px] text-slate-200">Projet</TableHead>
+                    <TableHead className="w-[100px] text-slate-200">Période</TableHead>
                     <TableHead className="text-slate-200">Compétences</TableHead>
                     <TableHead className="w-[100px] text-slate-200">Statut</TableHead>
                   </TableRow>
@@ -85,6 +187,11 @@ export function SynthesisSection() {
                         {compIndex === 0 ? (
                           <TableCell rowSpan={item.competences.length} className="align-top font-medium text-white">
                             {item.project}
+                          </TableCell>
+                        ) : null}
+                        {compIndex === 0 ? (
+                          <TableCell rowSpan={item.competences.length} className="align-top font-medium text-white">
+                            {item.period}
                           </TableCell>
                         ) : null}
                         <TableCell>
@@ -114,37 +221,54 @@ export function SynthesisSection() {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 0.6 }}
           className="mt-8"
         >
           <Card className="bg-clean-card border-slate-700">
             <CardContent className="pt-6">
-              <h3 className="text-2xl font-bold mb-4 text-white">Compétences du référentiel</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Compétences du référentiel BTS SIO SLAM</h3>
               <p className="text-slate-300 mb-4">
                 Le BTS SIO option SLAM forme aux métiers du développement d'applications. Les compétences sont réparties
                 en plusieurs blocs selon le référentiel officiel.
               </p>
-              <div className="grid md:grid-cols-3 gap-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-4 border border-slate-700 rounded-lg bg-slate-800">
-                  <h4 className="font-semibold text-white">Support Informatique</h4>
-                  <p className="text-slate-300 text-sm">
-                    Assistance technique et maintenance pour garantir le bon fonctionnement de vos systèmes informatiques et réseaux.
-                  </p>
+                  <h4 className="font-semibold text-white">Gérer le patrimoine informatique</h4>
+                  <ul className="text-slate-300 text-sm list-disc pl-5 mt-2">
+                    <li>Recenser et identifier les ressources numériques</li>
+                    <li>Exploiter des référentiels, normes et standards</li>
+                    <li>Mettre en place et vérifier les niveaux d'habilitation</li>
+                    <li>Vérifier les conditions de la continuité d'un service</li>
+                    <li>Gérer des sauvegardes</li>
+                    <li>Vérifier le respect des règles d'utilisation</li>
+                  </ul>
                 </div>
                 <div className="p-4 border border-slate-700 rounded-lg bg-slate-800">
-                  <h4 className="font-semibold text-white">Développement d'Applications</h4>
-                  <p className="text-slate-300 text-sm">
-                    Conception et développement d'applications sur mesure pour répondre aux besoins spécifiques de votre entreprise.
-                  </p>
+                  <h4 className="font-semibold text-white">Répondre aux incidents et aux demandes</h4>
+                  <ul className="text-slate-300 text-sm list-disc pl-5 mt-2">
+                    <li>Collecter, suivre et orienter des demandes</li>
+                    <li>Traiter des demandes concernant les services réseau et système</li>
+                    <li>Traiter des demandes concernant les applications</li>
+                  </ul>
                 </div>
                 <div className="p-4 border border-slate-700 rounded-lg bg-slate-800">
-                  <h4 className="font-semibold text-white">Cybersécurité</h4>
-                  <p className="text-slate-300 text-sm">
-                    Protection des systèmes et des données contre les menaces cybernétiques grâce à des solutions de sécurité avancées.
-                  </p>
+                  <h4 className="font-semibold text-white">Développer la présence en ligne</h4>
+                  <ul className="text-slate-300 text-sm list-disc pl-5 mt-2">
+                    <li>Participer à la valorisation de l'image de l'organisation</li>
+                    <li>Référencer les services en ligne de l'organisation</li>
+                    <li>Participer à l'évolution d'un site Web</li>
+                  </ul>
+                </div>
+                <div className="p-4 border border-slate-700 rounded-lg bg-slate-800">
+                  <h4 className="font-semibold text-white">Travailler en mode projet</h4>
+                  <ul className="text-slate-300 text-sm list-disc pl-5 mt-2">
+                    <li>Analyser les objectifs et les modalités d'organisation</li>
+                    <li>Planifier les activités</li>
+                    <li>Évaluer les indicateurs de suivi d'un projet</li>
+                    <li>Réaliser les tests d'intégration et d'acceptation</li>
+                  </ul>
                 </div>
               </div>
-
             </CardContent>
           </Card>
         </motion.div>
