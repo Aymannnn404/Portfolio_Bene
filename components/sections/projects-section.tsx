@@ -52,6 +52,21 @@ export function ProjectsSection() {
         "Créer une interface intuitive pour la réservation",
       ],
     },
+    {
+      title: "Application de QCM Aléatoire",
+      description:
+        "Application web de quiz qui génère aléatoirement 10 questions à chaque session. Comprend un espace administrateur pour suivre les résultats des utilisateurs et gérer la base de questions.",
+      image: "/qsm.jpg?height=300&width=600",
+      technologies: ["PHP", "HTML", "CSS", "MySQL"],
+      github: "https://github.com/Aymannnn404",
+      competences: [
+        "Développer une application web dynamique",
+        "Gérer une base de données de questions et réponses",
+        "Implémenter un système d'authentification",
+        "Créer un tableau de bord administrateur",
+        "Générer des questions aléatoires",
+      ],
+    },
   ]
 
   const container = {
